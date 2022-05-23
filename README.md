@@ -1,25 +1,25 @@
 This is a pack of functions for interfacing with composer
 ============================
 
-[![Total Downloads](https://poser.pugx.org/bookin/composer-api/downloads)](https://packagist.org/packages/bookin/composer-api)
-[![Monthly Downloads](https://poser.pugx.org/bookin/composer-api/d/monthly)](https://packagist.org/packages/bookin/composer-api)
-[![License](https://poser.pugx.org/bookin/composer-api/license)](https://packagist.org/packages/bookin/composer-api)
+[![Total Downloads](https://poser.pugx.org/redhataccess/composer-api/downloads)](https://packagist.org/packages/redhataccess/composer-api)
+[![Monthly Downloads](https://poser.pugx.org/redhataccess/composer-api/d/monthly)](https://packagist.org/packages/redhataccess/composer-api)
+[![License](https://poser.pugx.org/redhataccess/composer-api/license)](https://packagist.org/packages/redhataccess/composer-api)
 
 
 ## Installation
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/). 
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 To install, either run
 
 ```
-$ php composer.phar require bookin/composer-api "@dev"
+$ php composer.phar require redhataccess/composer-api "@dev"
 ```
 
 or add
 
 ```
-"bookin/composer-api": "@dev"
+"redhataccess/composer-api": "@dev"
 ```
 
 to the ```require``` section of your `composer.json` file.

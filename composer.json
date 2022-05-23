@@ -18,7 +18,10 @@
     }
   },
   "config": {
-    "sort-packages": true
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   },
   "replace": {
     "bookin/composer-api": "*"
@@ -26,5 +29,8 @@
   "require": {
     "php": "^7.4 || ^8.0",
     "composer/composer": "^2.0"
+  },
+  "require-dev": {
+    "drupal/coder": "^8.3"
   }
 }
