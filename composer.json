@@ -2,6 +2,9 @@
   "name": "redhataccess/composer-api",
   "description": "Pack of functions for interfacing with composer",
   "license": "MIT",
+  "config": {
+    "sort-packages": true
+  },
   "require": {
     "php": ">=5.4.0",
     "composer/composer": "*"
