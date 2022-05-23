@@ -24,7 +24,7 @@
     "bookin/composer-api": "*"
   },
   "require": {
-    "php": ">=5.4.0",
+    "php": "^7.4 || ^8.0",
     "composer/composer": "^2.0"
   }
 }
