@@ -2,13 +2,6 @@
   "name": "redhataccess/composer-api",
   "description": "Pack of functions for interfacing with composer",
   "license": "MIT",
-  "config": {
-    "sort-packages": true
-  },
-  "require": {
-    "php": ">=5.4.0",
-    "composer/composer": "*"
-  },
   "authors": [
     {
       "name": "Anton Mikhailov",
@@ -19,5 +12,12 @@
     "psr-4": {
       "bookin\\composer\\api\\": ""
     }
-  }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "composer/composer": "*"
+  },
 }
