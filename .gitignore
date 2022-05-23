@@ -1,0 +1,3 @@
+# Ignore Composer lock and installations.
+composer.lock
+vendor
