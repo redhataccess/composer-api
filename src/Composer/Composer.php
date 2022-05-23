@@ -46,13 +46,6 @@ class Composer {
    * @return Composer
    */
   public static function getInstance($configFile = NULL, $configFilePath = NULL) {
-    /*if(!isset($configFile)|| !isset($configFilePath)){
-    $config = Factory::createConfig(new NullIO(), getcwd());
-    if(!isset($configFile))
-    $configFile = $config->get('home').'/composer.json';
-    if(!isset($configFilePath))
-    $configFilePath = $config->get('home');
-    }*/
     putenv('COMPOSER=' . $configFile);
     self::$configFile = $configFile;
     self::$configFilePath = $configFilePath;

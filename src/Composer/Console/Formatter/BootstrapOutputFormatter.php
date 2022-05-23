@@ -62,10 +62,6 @@ class BootstrapOutputFormatter extends OutputFormatter {
   public function format($message) {
     $message = preg_replace('/<info>(.*),\s*(.*)<\/info>/i', '<info>$2 ($1)</info>', $message);
     $message = str_replace("\n", '', $message);
-    // $message = preg_replace('/<warning>(.*)<\/warning>/i', '<warning>$1</warning>'."\n\n", $message);
-    //        if(strlen($message) > 0 && strpos($message, "\n") === false){
-    //            $message .= $message."\n";
-    //        }
     $formatted = parent::format($message);
 
     $clearEscapeCodes = '(?:39|49|0|22|24|25|27|28|43)';
