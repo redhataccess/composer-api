@@ -20,6 +20,9 @@
   "config": {
     "sort-packages": true
   },
+  "replace": {
+    "bookin/composer-api": "*"
+  },
   "require": {
     "php": ">=5.4.0",
     "composer/composer": "*"
