@@ -1,5 +1,5 @@
 {
-  "name": "bookin/composer-api",
+  "name": "redhataccess/composer-api",
   "description": "Pack of functions for interfacing with composer",
   "license": "MIT",
   "require": {
