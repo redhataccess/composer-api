@@ -1,10 +1,11 @@
 <?php
-namespace bookin\composer\api;
 
+namespace bookin\Composer\Repository;
 
+use Composer\Repository\CompositeRepository as BaseCompositeRepository;
 use Composer\Repository\RepositoryInterface;
 
-class CompositeRepository extends \Composer\Repository\CompositeRepository
+class CompositeRepository extends BaseCompositeRepository
 {
     /**
      * {@inheritdoc}

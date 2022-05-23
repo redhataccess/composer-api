@@ -14,7 +14,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "bookin\\composer\\api\\": ""
+      "bookin\\": "src/"
     }
   },
   "config": {

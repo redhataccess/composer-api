@@ -1,6 +1,11 @@
 <?php
-namespace bookin\composer\api;
 
+namespace bookin\Composer;
+
+use bookin\Composer\Console\Application\WebApplication;
+use bookin\Composer\Console\Formatter\BootstrapOutputFormatter;
+use bookin\Composer\Console\Output\ComposerOutput;
+use bookin\Composer\Repository\CompositeRepository;
 use Composer\Console\Application;
 use Composer\Factory;
 use Composer\IO\NullIO;
@@ -138,7 +143,7 @@ class Composer
 
 
     /**
-     * @return WebApplication
+     * @return \bookin\Composer\Console\Application\WebApplication
      */
     public static function getApplication(){
         if(empty(self::$app)){

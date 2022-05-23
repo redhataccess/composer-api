@@ -1,7 +1,8 @@
 <?php
-namespace bookin\composer\api;
 
+namespace bookin\Composer\Console\Application;
 
+use bookin\Composer\Composer;
 use Composer\Console\Application;
 use Composer\Json\JsonValidationException;
 use Composer\Factory;

@@ -1,6 +1,6 @@
 <?php
-namespace bookin\composer\api;
 
+namespace bookin\Composer\Console\Formatter;
 
 use Symfony\Component\Console\Formatter\OutputFormatter;
 use Symfony\Component\Console\Formatter\OutputFormatterStyle;
