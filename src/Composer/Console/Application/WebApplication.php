@@ -22,6 +22,7 @@ class WebApplication extends Application {
   /**
    * @param bool|true $required
    * @param bool|false $disablePlugins
+   *
    * @return \Composer\Composer
    * @throws \Composer\Json\JsonValidationException
    */

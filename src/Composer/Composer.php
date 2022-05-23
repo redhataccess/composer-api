@@ -16,26 +16,33 @@ use Symfony\Component\Console\Input\ArrayInput;
  *
  */
 class Composer {
+
   public static $configFile = NULL;
+
   public static $configFilePath = NULL;
 
   private static $composer;
+
   private static $app;
+
   private static $_instance;
 
   /**
    *
    */
-  private function __construct() {}
+  private function __construct() {
+  }
 
   /**
    *
    */
-  private function __clone() {}
+  private function __clone() {
+  }
 
   /**
    * @param null $configFile
    * @param null $configFilePath
+   *
    * @return Composer
    */
   public static function getInstance($configFile = NULL, $configFilePath = NULL) {
@@ -71,12 +78,16 @@ class Composer {
    * @return \Composer\Package\PackageInterface[]
    */
   public static function getLocalPackages() {
-    return self::getComposer()->getRepositoryManager()->getLocalRepository()->getCanonicalPackages();
+    return self::getComposer()
+      ->getRepositoryManager()
+      ->getLocalRepository()
+      ->getCanonicalPackages();
   }
 
   /**
    * @param $name
    * @param array $options
+   *
    * @return string
    */
   public static function updatePackage($name, $options = []) {
@@ -85,6 +96,7 @@ class Composer {
 
   /**
    * @param array $options
+   *
    * @return string
    */
   public static function updateAllPackages($options = []) {
@@ -93,6 +105,7 @@ class Composer {
 
   /**
    * @param array $options
+   *
    * @return string
    */
   public static function deleteAllPackages($options = []) {
@@ -102,6 +115,7 @@ class Composer {
   /**
    * @param $name
    * @param array $options
+   *
    * @return string
    */
   public static function deletePackage($name, $options = []) {
@@ -110,6 +124,7 @@ class Composer {
 
   /**
    * @param $search
+   *
    * @return array|mixed
    * @throws \Composer\Json\JsonValidationException
    */
@@ -120,7 +135,8 @@ class Composer {
     $platformRepo = new PlatformRepository();
     $localRepo = $composer->getRepositoryManager()->getLocalRepository();
     $installedRepo = new CompositeRepository([$localRepo, $platformRepo]);
-    $repos = new CompositeRepository(array_merge([$installedRepo], $composer->getRepositoryManager()->getRepositories()));
+    $repos = new CompositeRepository(array_merge([$installedRepo], $composer->getRepositoryManager()
+      ->getRepositories()));
     $flags = RepositoryInterface::SEARCH_FULLTEXT;
     $results = $repos->search($search, $flags);
 
@@ -130,6 +146,7 @@ class Composer {
   /**
    * @param $name
    * @param null $version
+   *
    * @return \Composer\Package\PackageInterface|null
    * @throws \Exception
    */
@@ -159,6 +176,7 @@ class Composer {
   /**
    * @param string $command
    * @param array $params
+   *
    * @return string
    */
   public static function runCommand($command = '', $params = []) {

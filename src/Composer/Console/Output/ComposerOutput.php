@@ -13,6 +13,7 @@ use Symfony\Component\Console\Output\Output;
  * @property OutputFormatter $formatter
  */
 class ComposerOutput extends Output {
+
   protected $message;
 
   /**
